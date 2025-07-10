@@ -1,75 +1,100 @@
-body{
-    background-color: rgb(24, 24, 24);
-    display: flex;
-    justify-content: center;
-    align-items: center;     
-    height: 100vh;           
-    margin: 0px;
+* {
+  box-sizing: border-box;
 }
 
-section{
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    background-color: rgb(99, 99, 99);
-    border-radius: 5%;
+body {
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 100vh;           
+  margin: 0px;
+  padding: 0;
 }
 
-.resulta{
-    outline: none;
-    border-radius: 20px;
-    color: aliceblue;
-    width: 435px;
-    height: 90px;
-    font-size: 80px;
-    padding: 10px;
-    background-color: rgb(78, 78, 78);
-    border: none;
-    text-align: right;
+section {
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(99, 99, 99);
+  border-radius: 5%;
+  width: 95vw;
+  max-width: 500px;
+}
+
+.resulta {
+  font-size: clamp(28px, 8vw, 50px);
+  outline: none;
+  border-radius: 20px;
+  color: aliceblue;
+  width: 100%;
+  height: 80px;
+  padding: 10px 20px;
+  background-color: rgb(78, 78, 78);
+  border: none;
+  text-align: right;
+  position: relative;
 }
 
 .resulta.visual-negativo::before {
   content: "-";
   position: absolute;
-  left: 5px;
+  left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: red; /* cor que quiser */
+  color: red;
   font-weight: bold;
   pointer-events: none;
   user-select: none;
 }
 
-.resulta:active{
-    background-color: rgba(78, 78, 78, 0.733);
+.resulta:active {
+  background-color: rgba(78, 78, 78, 0.733);
 }
 
-div{
-    padding: 5px;
-    gap: 5px;
-    display: flex;
-    margin: 0;
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
 }
 
-.F1{
-    gap: 235px;
+.F1 {
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
-button{
-    width: 110px;
-    height: 110px;
-    border-radius: 20px;
-    border: none;
-    background-color: rgb(59, 59, 59);
-    color: aliceblue;
-    font-size: 50px;
+button {    
+  font-size: clamp(20px, 6vw, 40px);
+  width: 22vw;
+  height: 22vw;
+  max-width: 110px;
+  max-height: 110px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(59, 59, 59);
+  color: aliceblue;
 }
 
-button:hover{
-    opacity: 70%;
+button:hover {
+  opacity: 70%;
 }
 
-button:active{
-    opacity: 50%;
+button:active {
+  opacity: 50%;
 }
 
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-height: 500px) {
+  .resulta {
+    height: 60px;
+    font-size: 6vw;
+  }
+
+  button {
+    height: 18vw;
+    width: 18vw;
+    font-size: 6vw;
+  }
+}
