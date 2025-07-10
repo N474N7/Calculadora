@@ -1,6 +1,6 @@
 const caixaDtexto = document.querySelector('.resulta');
 const historicoLista = [];
-const LIMITE_DIGITOS = 13;
+const LIMITE_DIGITOS = 11;
 
 let expressao = "";
 let valorAnterior = null;
