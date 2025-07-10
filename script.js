@@ -1,6 +1,6 @@
 const caixaDtexto = document.querySelector('.resulta');
 const historicoLista = [];
-const LIMITE_DIGITOS = 25;
+const LIMITE_DIGITOS = 12;
 
 let expressao = "";
 let valorAnterior = null;
@@ -29,7 +29,7 @@ function C() {
   caixaDtexto.value = "";
 }
 
-// APAGAR UM CARACTERE
+// APAGAR
 function apagar() {
   if (expressao.length > 0) {
     expressao = expressao.slice(0, -1);
@@ -50,7 +50,7 @@ function colchetes() {
   atualizarDisplay();
 }
 
-// PORCENTAGEM → guarda valor e prepara próxima entrada
+// PORCENTAGEM 
 function porcentagem() {
   if (!expressao) return;
   porcentagemGuardada = parseFloat(expressao);
@@ -60,7 +60,7 @@ function porcentagem() {
   caixaDtexto.value = "%";
 }
 
-// INVERTE SINAL DE VERDADE
+// INVERTE SINAL 
 function trocaSinal() {
   if (!expressao) return;
   if (expressao.startsWith("-")) {

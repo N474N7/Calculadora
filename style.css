@@ -18,7 +18,7 @@ section {
   padding: 20px;
   background-color: rgb(99, 99, 99);
   border-radius: 5%;
-  width: 95vw;
+  width: 71vw;
   max-width: 500px;
 }
 
@@ -67,8 +67,8 @@ div {
 
 button {    
   font-size: clamp(20px, 6vw, 40px);
-  width: 22vw;
-  height: 22vw;
+  width: 15vw;
+  height: 15vw;
   max-width: 110px;
   max-height: 110px;
   border-radius: 20px;
