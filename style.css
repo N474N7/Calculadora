@@ -18,7 +18,7 @@ section {
   padding: 20px;
   background-color: rgb(99, 99, 99);
   border-radius: 5%;
-  width: 71vw;
+  width: 59vw;
   max-width: 500px;
 }
 
@@ -67,8 +67,8 @@ div {
 
 button {    
   font-size: clamp(20px, 6vw, 40px);
-  width: 15vw;
-  height: 15vw;
+  width: 12vw;
+  height: 12vw;
   max-width: 110px;
   max-height: 110px;
   border-radius: 20px;
@@ -85,7 +85,6 @@ button:active {
   opacity: 50%;
 }
 
-/* Ajustes adicionais para telas muito pequenas */
 @media (max-height: 500px) {
   .resulta {
     height: 60px;
@@ -93,8 +92,8 @@ button:active {
   }
 
   button {
-    height: 18vw;
-    width: 18vw;
+    height: 15vw;
+    width: 15vw;
     font-size: 6vw;
   }
 }
